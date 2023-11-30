@@ -3,17 +3,17 @@ package main;
 public class Coffee {
 	private String type; // (Espresso - Cappuccino - Latte)
 	private boolean isDecaf;
-	private double ppkg; //Price Per KG
+	private double price;
 	private String blend; // (Arabica - Robusta - Columbian)
 	private boolean isGrounded;
 	
 	public Coffee() {}
 
-	public Coffee(String type, boolean isDecaf, double ppkg, String blend, boolean isGrounded) {
+	public Coffee(String type, boolean isDecaf, double price, String blend, boolean isGrounded) {
 		super();
 		this.type = type;
 		this.isDecaf = isDecaf;
-		this.ppkg = ppkg;
+		this.price = price;
 		this.blend = blend;
 		this.isGrounded = isGrounded;
 	}
@@ -34,12 +34,12 @@ public class Coffee {
 		this.isDecaf = isDecaf;
 	}
 
-	public double getPpkg() {
-		return ppkg;
+	public double getPrice() {
+		return price;
 	}
 
-	public void setPpkg(double ppkg) {
-		this.ppkg = ppkg;
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
 	public String getBlend() {
@@ -60,7 +60,7 @@ public class Coffee {
 
 	@Override
 	public String toString() {
-		return ">> type=" + type + ", isDecaf=" + isDecaf + ", ppkg=" + ppkg + ", blend=" + blend + ", isGrounded=" + isGrounded;
+		return ">> type=" + type + ", isDecaf=" + isDecaf + ", price=" + price + ", blend=" + blend + ", isGrounded=" + isGrounded;
 	}
 	
 	
