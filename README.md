@@ -10,5 +10,11 @@
 
  
 **EL GOUMRI REDA**
+# ICED_COFFEE
+
+- Class iced_Cofeee Class herite from class Coffee
+  Attributes:
+    * temperature
+    * icedCoffeeStrength
 
 **MEHDI**
