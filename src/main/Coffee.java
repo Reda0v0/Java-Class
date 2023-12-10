@@ -1,6 +1,9 @@
 package main;
 
-public class Coffee {
+import java.util.function.Function;
+import java.util.*;
+
+public class Coffee implements Comparable<Coffee> {
 	private String type; // (Espresso - Cappuccino - Latte)
 	private boolean isDecaf;
 	private double price;
@@ -58,10 +61,12 @@ public class Coffee {
 		this.isGrounded = isGrounded;
 	}
 
-	@Override
 	public String toString() {
 		return ">> type=" + type + ", isDecaf=" + isDecaf + ", price=" + price + ", blend=" + blend + ", isGrounded=" + isGrounded;
 	}
 	
-	
+    @Override
+    public int compareTo(Coffee otherCoffee) {
+        return Double.compare(this.getPrice(), otherCoffee.getPrice());
+    }
 }
